@@ -1,0 +1,33 @@
+{
+    "name": "yfsns/yfsns-sms-aliyun",
+    "description": "YFSNS 阿里云短信独立包 - 完整的阿里云短信对接解决方案",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "合肥音符信息科技有限公司",
+            "email": "support@yfsns.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^10.0|^11.0|^12.0",
+        "alibabacloud/dysmsapi-20170525": "^2.0",
+        "alibabacloud/client": "^1.5",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yfsns\\LaravelSmsAliyun\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yfsns\\LaravelSmsAliyun\\Providers\\SmsAliyunServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
